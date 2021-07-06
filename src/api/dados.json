@@ -1,0 +1,96 @@
+{
+  "data": {
+    "setting": {
+      "id": "60da17f98f6c543aa4fc9a34",
+      "blogName": "Felipe",
+      "blogDescription": "Notícias estranhas",
+      "logo": {
+        "id": "60df6cdaf390a2454c49b5dd",
+        "alternativeText": "Dois Minions",
+        "url": "https://res.cloudinary.com/dgakoaijx/image/upload/v1625255128/minion_39ddf028b9.jpg"
+      },
+      "menuLink": [
+        {
+          "id": "60df6d11f390a2454c49b5e0",
+          "link": "author",
+          "text": "Author",
+          "newTab": false
+        }
+      ],
+      "text": "<p>Loucura demais isso aqui</p>"
+    },
+    "posts": [
+      {
+        "id": "60df6bbcf390a2454c49b5d9",
+        "slug": "um-por-do-sol",
+        "title": "Um por do sol",
+        "excerpt": "Tudo é bonito quando é de longe fica melhor ainda",
+        "content": "<p>Cientistas internacionais desenvolveram uma <a href=\"https://exame.com/noticias-sobre/inteligencia-artificial/\"><strong>rede neural</strong></a> que pode detectar buracos coronais do<strong> </strong><a href=\"https://exame.com/noticias-sobre/sol/\"><strong>Sol</strong></a>, regiões mais frias e escuras da estrela, a partir de imagens coletadas por instrumentos de observação, como o Solar Dynamics Observatory (SDO).</p><ul><li>O mundo segue mudando.&nbsp;<a href=\"https://academy.exame.com/?redacao_ciencia\"><strong>Siga em evolução com a EXAME Academy.</strong></a></li></ul><p>Publicado na revista <a href=\"https://www.aanda.org/component/article?access=doi&amp;doi=10.1051/0004-6361/202140640\"><i>Astronomy and Astrophysics</i></a>, o estudo irá ajudar a melhorar previsões meteorológicas e entender mais sobre o ciclo de atividade solar. Cientistas poderiam prever com antecedência uma tempestade solar que pode afetar eletrônicos a bordo da Estação Espacial Internacional, por exemplo.</p><p>A atmosfera solar externa, conhecida como coroa solar, é sempre monitorada por telescópios baseados em satélites, já que o Sol é muito ativo e pode apresentar erupções ou causar tempestades geomagnéticas na <a href=\"https://exame.com/noticias-sobre/planeta-terra/\"><strong>Terra</strong></a>.</p><p>Uma das características sempre observadas pelos telescópios são os orifícios ou <strong>buracos coronais</strong> da estrela, regiões escuras por conta de partículas de plasma que escapam pelo campo magnético da superfície solar para o espaço interplanetário, deixando um buraco preto.</p><p>&nbsp;</p><p>“A detecção de orifícios coronais é uma tarefa difícil para algoritmos convencionais e também desafiadora para observadores humanos, porque também existem outras regiões escuras na atmosfera solar, como filamentos, que podem ser facilmente confundidos com um orifício coronal”, disse Robert Jarolim, cientista e principal autor do estudo.</p>",
+        "createdAt": "2021-07-02T19:40:44.611Z",
+        "allowComments": true,
+        "cover": {
+          "id": "60df6b94f390a2454c49b5d8",
+          "alternativeText": "Por do sol",
+          "url": "https://res.cloudinary.com/dgakoaijx/image/upload/v1625254795/9f660f6d0d09d80f6cc039d275567deb_e51239b4d0.png"
+        },
+        "categories": [
+          {
+            "id": "60d7a2cb7a97a42230024570",
+            "displayName": "ReactJS",
+            "slug": "react-js"
+          }
+        ],
+        "tags": [
+          {
+            "id": "60d7a3017a97a42230024572",
+            "displayName": "useState",
+            "slug": "use-state"
+          },
+          {
+            "id": "60d7a3137a97a42230024573",
+            "displayName": "useEffect",
+            "slug": "use-effect"
+          }
+        ],
+        "author": {
+          "id": "60d7a2527a97a4223002456e",
+          "displayName": "Felipe de Lima",
+          "slug": "felipe-de-lima"
+        }
+      },
+      {
+        "id": "60d7a57d7a97a42230024574",
+        "slug": "um-post-qualuqer",
+        "title": "Um Post Qualuqer",
+        "excerpt": "Seria tudo de bom se não fosse tudo de ruim a confusão que seria sendo o que não seria e deixa tudo complicado como seria.",
+        "content": "<p>Blog é a versão simplificada da palavra weblog.</p><p>“Web” significa “rede”, mas também é como ficou mais conhecida a sigla para a rede mundial de computadores: World Wide Web.</p><p>O “www” presente na URL do seu navegador comprova a informação.</p><p>“Log”, em português, pode ser traduzido como “registro”.</p><p>No entanto, tenho outra tradução favorita: diário.</p><p>Um diário de bordo é utilizado na navegação marítima para anotações frequentes sobre o que ocorre durante a viagem.</p><p>Em caráter pessoal, é geralmente um caderno no qual escrevemos os principais acontecimentos de nossas vidas.</p><p>Quando transferimos os logs para a internet, eles tornam-se virtuais, mas sua função permanece.</p><p>Em outras palavras, um weblog ou blog é um diário eletrônico.</p><p>Como tal, tem algumas características.</p><p>A primeira delas é a atualização regular.</p><p>Como a própria palavra diz, o registro normalmente é diário.</p><p>Com updates frequentes (chamados de blog posts), você atrai novos visitantes para as páginas e pode explorar uma gama ampla de assuntos.</p><p>Outra peculiaridade, bem diferente de seu relativo físico, é que um blog é público.</p><p>Isso nos leva a outra possível tradução: jornal.</p><p>Assim, como consequência, temos a datação.</p><p>A inserção da data é um elemento importante, já que o público considera a idade da notícia para determinar sua relevância.</p><p>Por isso, os blog posts são mostrados ao usuário de maneira cronológica.</p><p>Assim, em sua ideia original, os blogs foram criados para uso pessoal.</p><p>Mais tarde, foram incorporados aos negócios, tópico que será tratado a seguir.</p>",
+        "createdAt": "2021-06-26T22:09:01.190Z",
+        "allowComments": true,
+        "cover": {
+          "id": "60db15f5b273481e24e55fb7",
+          "alternativeText": "dois minios",
+          "url": "https://res.cloudinary.com/dgakoaijx/image/upload/v1624970739/test_d9ebc9f308.jpg"
+        },
+        "categories": [
+          {
+            "id": "60d7a2b07a97a4223002456f",
+            "displayName": "JavaScript",
+            "slug": "java-script"
+          }
+        ],
+        "tags": [
+          {
+            "id": "60d7a3017a97a42230024572",
+            "displayName": "useState",
+            "slug": "use-state"
+          }
+        ],
+        "author": {
+          "id": "60d7a2527a97a4223002456e",
+          "displayName": "Felipe de Lima",
+          "slug": "felipe-de-lima"
+        }
+      }
+    ]
+  }
+}

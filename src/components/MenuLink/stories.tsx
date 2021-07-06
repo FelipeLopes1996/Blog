@@ -1,0 +1,36 @@
+import { MenuLink, MenuLinkProps } from '.';
+import { Meta, Story } from '@storybook/react/types-6-0';
+import { theme } from '../../styles/theme';
+export default {
+  title: 'MenuLink',
+  component: MenuLink,
+  args: {
+    children: 'MenuLink',
+    link: 'https://www.google.com',
+  },
+  argTypes: {
+    children: { type: 'string' },
+  },
+  parameters: {
+    backgrounds: {
+      default: 'dark',
+    },
+  },
+} as Meta;
+
+export const Template: Story<MenuLinkProps> = (args) => {
+  return (
+    <div
+      style={{
+        maxWidth: '320px',
+        background: theme.colors.primary,
+        padding: theme.spacings.large,
+      }}
+    >
+      <MenuLink {...args} />
+      <MenuLink {...args} />
+      <MenuLink {...args} />
+      <MenuLink {...args} />
+    </div>
+  );
+};
