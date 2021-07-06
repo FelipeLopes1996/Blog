@@ -11,17 +11,16 @@ export type CommentsProps = {
 export const Comments = ({ id, slug, title, allowComments }: CommentsProps) => {
   if (!allowComments) return null;
 
+  const config = {
+    url: `https://blog-pckh6yyg6-felipelopes1996.vercel.app/post/${slug}/`,
+    identifier: id,
+    title: title,
+    language: 'pt_BR',
+  };
+
   return (
     <Styled.Wrapper>
-      <DiscussionEmbed
-        shortname="blog-do-felipe"
-        config={{
-          url: `https://blog-6e5cq7yyo-felipelopes1996.vercel.app/post/${slug}`,
-          identifier: id,
-          title: title,
-          language: 'pt_BR',
-        }}
-      />
+      <DiscussionEmbed shortname="blog-do-felipe" config={config} />
     </Styled.Wrapper>
   );
 };
