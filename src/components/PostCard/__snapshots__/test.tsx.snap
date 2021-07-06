@@ -31,6 +31,7 @@ exports[`<PostCard /> should render 1`] = `
 
 .c1 {
   max-width: 100%;
+  width: 100%;
   -webkit-transition: opacity 300ms ease-in-out;
   transition: opacity 300ms ease-in-out;
 }
@@ -40,12 +41,12 @@ exports[`<PostCard /> should render 1`] = `
     class="c0"
   >
     <a
-      href="/post/vis-nobis-veritus-maluisset-id-nonumy-adversarium"
+      href="/post/um-por-do-sol"
     >
       <img
-        alt="Vis nobis veritus maluisset id, nonumy adversarium"
+        alt="Um por do sol"
         class="c1"
-        src="https://res.cloudinary.com/dlizakp2a/image/upload/v1614698965/Ubuntu_gel_by_Midge_Mantissa_Sinnaeve_7caea7ddb4.jpg"
+        src="https://res.cloudinary.com/dgakoaijx/image/upload/v1625254795/9f660f6d0d09d80f6cc039d275567deb_e51239b4d0.png"
       />
     </a>
     <h2
@@ -53,14 +54,14 @@ exports[`<PostCard /> should render 1`] = `
     >
       <a>
          
-        Vis nobis veritus maluisset id, nonumy adversarium
+        Um por do sol
          
       </a>
     </h2>
     <p
       class=""
     >
-      Fugit aliquip erroribus eu eam, an mel vidit doctus. Vis nobis veritus maluisset id, nonumy adversarium neglegentur est ut. Tation persius pri eu, modo minim fastidii mei no. Ad tota pertinax definiebas eam.
+      Tudo é bonito quando é de longe fica melhor ainda
     </p>
   </div>
 </div>

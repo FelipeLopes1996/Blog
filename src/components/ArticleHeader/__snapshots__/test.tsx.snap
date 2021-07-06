@@ -52,6 +52,7 @@ exports[`<ArticleHeader /> should render 1`] = `
 
 .c4 {
   max-width: 100%;
+  width: 100%;
   display: block;
   margin-bottom: 2.4rem;
 }
@@ -63,17 +64,17 @@ exports[`<ArticleHeader /> should render 1`] = `
     <h1
       class="c1 c2"
     >
-      Vis nobis veritus maluisset id, nonumy adversarium
+      Um por do sol
     </h1>
     <p
       class="c3"
     >
-      Fugit aliquip erroribus eu eam, an mel vidit doctus. Vis nobis veritus maluisset id, nonumy adversarium neglegentur est ut. Tation persius pri eu, modo minim fastidii mei no. Ad tota pertinax definiebas eam.
+      Tudo é bonito quando é de longe fica melhor ainda
     </p>
     <img
-      alt="Vis nobis veritus maluisset id, nonumy adversarium"
+      alt="Um por do sol"
       class="c4"
-      src="https://res.cloudinary.com/dlizakp2a/image/upload/v1614698965/Ubuntu_gel_by_Midge_Mantissa_Sinnaeve_7caea7ddb4.jpg"
+      src="https://res.cloudinary.com/dgakoaijx/image/upload/v1625254795/9f660f6d0d09d80f6cc039d275567deb_e51239b4d0.png"
     />
     <div
       class="c5"
@@ -83,9 +84,9 @@ exports[`<ArticleHeader /> should render 1`] = `
           Por 
         </span>
         <a
-          href="/author/otavio-miranda"
+          href="/author/felipe-de-lima"
         >
-          Otávio Miranda
+          Felipe de Lima
         </a>
         <span
           class="separator"
@@ -93,9 +94,9 @@ exports[`<ArticleHeader /> should render 1`] = `
            | 
         </span>
         <time
-          datetime="2020-04-20"
+          datetime="2021-07-02T19:40:44.611Z"
         >
-          19 de abr. de 2020
+          2 de jul. de 2021
         </time>
         <span
           class="separator"
@@ -107,16 +108,9 @@ exports[`<ArticleHeader /> should render 1`] = `
         >
           <span>
             <a
-              href="/category/java-script"
+              href="/category/react-js"
             >
-              JavaScript
-            </a>
-          </span>
-          <span>
-            <a
-              href="/category/react"
-            >
-              React
+              ReactJS
             </a>
           </span>
         </span>

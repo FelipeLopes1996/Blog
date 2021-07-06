@@ -1,31 +1,3 @@
-// import React from 'react';
-// import { ThemeProvider, DefaultTheme } from 'styled-components';
-
-// import STORAGE from '../constants/storage';
-// import { theme, darkTheme } from '../styles/dark-theme';
-// import useStore from '../hook/useStore';
-
-// export type DefaultType = {
-//   children: React.ReactNode;
-// };
-
-// export type DefaultTypeContext = {
-//   theme: DefaultTheme;
-// };
-
-// export const ThemeContext = React.createContext<DefaultTypeContext>({ theme });
-
-// const Provider = ({ children }: DefaultType) => {
-//   const [blogTheme, setlogTheme] = useStore(STORAGE.THEME, darkTheme.title);
-//   return (
-//     <ThemeContext.Provider value={[blogTheme, setlogTheme]}>
-//       <ThemeProvider theme={theme}>{children}</ThemeProvider>
-//     </ThemeContext.Provider>
-//   );
-// };
-
-// export default Provider;
-
 import React, { createContext, useCallback, useEffect, useState } from 'react';
 import { DefaultTheme, ThemeProvider } from 'styled-components';
 import { theme } from '../styles/theme';
