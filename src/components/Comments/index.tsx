@@ -12,7 +12,7 @@ export const Comments = ({ id, slug, title, allowComments }: CommentsProps) => {
   if (!allowComments) return null;
 
   const config = {
-    url: `https://blog-pckh6yyg6-felipelopes1996.vercel.app/post/${slug}/`,
+    url: `https://blog-p8ahvazpn-felipelopes1996.vercel.app/post/${slug}/`,
     identifier: id,
     title: title,
     language: 'pt_BR',
