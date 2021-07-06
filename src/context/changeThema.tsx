@@ -31,7 +31,7 @@ export const BlogThemeProvider = ({ children }: BlogThemeProviderProps) => {
         setBlogTheme(theme);
         localStorage.setItem('theme', JSON.stringify(theme));
       } else {
-        const newTheme: any = {
+        const newTheme = {
           ...theme,
           name: 'inverted',
           colors: {

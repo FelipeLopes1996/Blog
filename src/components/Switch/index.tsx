@@ -27,6 +27,7 @@ export const Switch = () => {
   return (
     <Styled.Wrapper>
       <label className="switch">
+        Toggle light and dark modes
         <input type="checkbox" onChange={handleChange} checked={checked} />
         <span className="slider round"></span>
       </label>

@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Switch /> should render input and switch between theme when switching input 1`] = `
+.c0 .switch {
+  position: relative;
+  display: inline-block;
+  width: 6rem;
+  height: 2.7rem;
+  left: 115rem;
+  bottom: 4rem;
+}
+
+.c0 .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.c0 .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.c0 .slider:before {
+  position: absolute;
+  content: '';
+  height: 2rem;
+  width: 2rem;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.c0 input:checked + .slider {
+  background-color: #2196f3;
+}
+
+.c0 input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+.c0 input:checked + .slider:before {
+  -webkit-transform: translateX(2.6rem);
+  -ms-transform: translateX(2.6rem);
+  -webkit-transform: translateX(3.1rem);
+  -ms-transform: translateX(3.1rem);
+  transform: translateX(3.1rem);
+}
+
+.c0 .slider.round {
+  border-radius: 3.4rem;
+}
+
+.c0 .slider.round:before {
+  border-radius: 50%;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <label
+      class="switch"
+    >
+      Toggle light and dark modes
+      <input
+        type="checkbox"
+      />
+      <span
+        class="slider round"
+      />
+    </label>
+  </div>
+</div>
+`;
