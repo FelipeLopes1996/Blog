@@ -26,11 +26,16 @@ export const Switch = () => {
   };
   return (
     <Styled.Wrapper>
-      <label className="switch">
+      <Styled.Label>
         Toggle light and dark modes
-        <input type="checkbox" onChange={handleChange} checked={checked} />
-        <span className="slider round"></span>
-      </label>
+        <Styled.Input
+          type="checkbox"
+          value="Dark mode active"
+          onChange={handleChange}
+          checked={checked}
+        />
+        <Styled.Slider></Styled.Slider>
+      </Styled.Label>
     </Styled.Wrapper>
   );
 };

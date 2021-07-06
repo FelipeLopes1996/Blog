@@ -16,9 +16,9 @@ describe('<Switch />', () => {
   });
 
   it('should render input without theme', () => {
+    localStorage.removeItem('theme');
     renderTheme(<Switch />);
     const input = screen.getByRole('checkbox');
-
     expect(input).not.toBeChecked();
   });
 
@@ -27,6 +27,9 @@ describe('<Switch />', () => {
       'theme',
       JSON.stringify({ ...theme, name: 'default' }),
     );
+    renderTheme(<Switch />);
+    const input = screen.getByRole('checkbox');
+    expect(input).not.toBeChecked();
   });
 
   it('should render input checked with inverted theme', () => {
@@ -35,7 +38,7 @@ describe('<Switch />', () => {
     expect(screen.getByRole('checkbox')).toBeChecked();
   });
 
-  it('should render input and switch between theme when switching input', () => {
+  it('should render input and toggle between theme when toggling input', () => {
     const { container } = renderTheme(<Switch />);
 
     const label = screen.getByLabelText('Toggle light and dark modes');
@@ -46,6 +49,7 @@ describe('<Switch />', () => {
 
     fireEvent.click(label);
     expect(input).toBeChecked();
+
     expect(container).toMatchSnapshot();
   });
 });

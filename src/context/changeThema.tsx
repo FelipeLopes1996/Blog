@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { createContext, useCallback, useEffect, useState } from 'react';
 import { DefaultTheme, ThemeProvider } from 'styled-components';
 import { theme } from '../styles/theme';
@@ -31,7 +32,7 @@ export const BlogThemeProvider = ({ children }: BlogThemeProviderProps) => {
         setBlogTheme(theme);
         localStorage.setItem('theme', JSON.stringify(theme));
       } else {
-        const newTheme = {
+        const newTheme: any = {
           ...theme,
           name: 'inverted',
           colors: {

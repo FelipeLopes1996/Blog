@@ -5,7 +5,7 @@ import Link from 'next/link';
 export type LogoLinkProps = {
   text: string;
   srcImg?: string;
-  link?: string;
+  link: string;
   newTab?: boolean;
 };
 

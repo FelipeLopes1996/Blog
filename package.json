@@ -55,7 +55,7 @@
     "typescript": "^4.2.2"
   },
   "lint-staged": {
-    "src/**/*": [
+    "src/**/*.{js,ts,jsx,tsx}": [
       "npm run lint -- --fix",
       "npm test -- --findRelatedTests --bail"
     ]

@@ -16,11 +16,13 @@ describe('<Post />', () => {
     ).toBeInTheDocument();
     expect(screen.getByRole('img', { name: props.title })).toBeInTheDocument();
     expect(
-      screen.getAllByText(/^Fugit aliquip erroribus eu eam/i)[0],
+      screen.getAllByText(
+        /^Tudo é bonito quando é de longe fica melhor ainda/i,
+      )[0],
     ).toHaveStyle({ 'font-size': '2.4rem' });
     expect(screen.getByText(formatDate(props.createdAt))).toBeInTheDocument();
     expect(
-      screen.getByText(/^Blockquote: Et sed legere rationibus/i),
+      screen.getByText(/^Cientistas internacionais desenvolveram uma/i),
     ).toBeInTheDocument();
     expect(container).toMatchSnapshot();
   });

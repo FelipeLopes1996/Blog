@@ -1,67 +1,64 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Wrapper = styled.div`
-  .switch {
-    position: relative;
-    display: inline-block;
-    width: 6rem;
-    height: 2.7rem;
-    left: 115rem;
-    bottom: 4rem;
-  }
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 2;
+`;
 
-  /* Hide default HTML checkbox */
-  .switch input {
+export const Label = styled.label`
+  position: relative;
+  display: inline-block;
+  width: 5rem;
+  height: 2.5rem;
+  line-height: 0;
+  font-size: 0;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0);
+`;
+
+export const Input = styled.input`
+  ${({ theme }) => css`
+    appearance: none;
     opacity: 0;
     width: 0;
     height: 0;
-  }
+    &:checked + ${Slider} {
+      background: ${theme.colors.secondary};
+    }
+    &:focus + ${Slider} {
+      box-shadow: 0 0 1px ${theme.colors.secondary};
+    }
+    &:checked + ${Slider}:before {
+      transform: translateX(1.9rem);
+      background: ${theme.colors.primary};
+    }
+  `}
+`;
 
-  /* The slider */
-  .slider {
+export const Slider = styled.span`
+  ${({ theme }) => css`
     position: absolute;
     cursor: pointer;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-  }
-
-  .slider:before {
-    position: absolute;
-    content: '';
-    height: 2rem;
-    width: 2rem;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-  }
-
-  input:checked + .slider {
-    background-color: #2196f3;
-  }
-
-  input:focus + .slider {
-    box-shadow: 0 0 1px #2196f3;
-  }
-
-  input:checked + .slider:before {
-    -webkit-transform: translateX(2.6rem);
-    -ms-transform: translateX(2.6rem);
-    transform: translateX(3.1rem);
-  }
-
-  /* Rounded sliders */
-  .slider.round {
-    border-radius: 3.4rem;
-  }
-
-  .slider.round:before {
-    border-radius: 50%;
-  }
+    background: ${theme.colors.mediumGray};
+    transition: all 300ms ease-in-out;
+    border-radius: 2rem;
+    box-shadow: 0 0 1px ${theme.colors.primary};
+    &:before {
+      content: '';
+      position: absolute;
+      height: 2.1rem;
+      width: 2.1rem;
+      left: 0.4rem;
+      bottom: 0.2rem;
+      background: ${theme.colors.darkText};
+      border-radius: 50%;
+      transition: all 300ms ease-in-out;
+    }
+  `}
 `;

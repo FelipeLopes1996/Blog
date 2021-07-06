@@ -1,69 +1,88 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Switch /> should render input and switch between theme when switching input 1`] = `
-.c0 .switch {
-  position: relative;
-  display: inline-block;
-  width: 6rem;
-  height: 2.7rem;
-  left: 115rem;
-  bottom: 4rem;
+exports[`<Switch /> should render input and toggle between theme when toggling input 1`] = `
+.c0 {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 2;
 }
 
-.c0 .switch input {
+.c1 {
+  position: relative;
+  display: inline-block;
+  width: 5rem;
+  height: 2.5rem;
+  line-height: 0;
+  font-size: 0;
+  overflow: hidden;
+  color: rgba(0,0,0,0);
+}
+
+.c5:checked + .c3 {
+  background: #dc143c;
+}
+
+.c5:focus + .c3 {
+  box-shadow: 0 0 1px #dc143c;
+}
+
+.c5:checked + .c3:before {
+  -webkit-transform: translateX(1.9rem);
+  -ms-transform: translateX(1.9rem);
+  transform: translateX(1.9rem);
+  background: #000000;
+}
+
+.c2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-.c0 .slider {
+.c2:checked + .c3 {
+  background: #e6a1af;
+}
+
+.c2:focus + .c3 {
+  box-shadow: 0 0 1px #e6a1af;
+}
+
+.c2:checked + .c3:before {
+  -webkit-transform: translateX(1.9rem);
+  -ms-transform: translateX(1.9rem);
+  transform: translateX(1.9rem);
+  background: #FFFFFF;
+}
+
+.c4 {
   position: absolute;
   cursor: pointer;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: 0.4s;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  background: #f9f9f9;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  border-radius: 2rem;
+  box-shadow: 0 0 1px #FFFFFF;
 }
 
-.c0 .slider:before {
-  position: absolute;
+.c4:before {
   content: '';
-  height: 2rem;
-  width: 2rem;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: 0.4s;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.c0 input:checked + .slider {
-  background-color: #2196f3;
-}
-
-.c0 input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
-}
-
-.c0 input:checked + .slider:before {
-  -webkit-transform: translateX(2.6rem);
-  -ms-transform: translateX(2.6rem);
-  -webkit-transform: translateX(3.1rem);
-  -ms-transform: translateX(3.1rem);
-  transform: translateX(3.1rem);
-}
-
-.c0 .slider.round {
-  border-radius: 3.4rem;
-}
-
-.c0 .slider.round:before {
+  position: absolute;
+  height: 2.1rem;
+  width: 2.1rem;
+  left: 0.4rem;
+  bottom: 0.2rem;
+  background: #F9f9f9;
   border-radius: 50%;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 <div>
@@ -71,14 +90,16 @@ exports[`<Switch /> should render input and switch between theme when switching 
     class="c0"
   >
     <label
-      class="switch"
+      class="c1"
     >
       Toggle light and dark modes
       <input
+        class="c2"
         type="checkbox"
+        value="Dark mode active"
       />
       <span
-        class="slider round"
+        class="c3 c4"
       />
     </label>
   </div>
